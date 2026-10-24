@@ -23,8 +23,9 @@ npm run preview
 The production bundle is written to `dist/`. A hosting server should serve the SPA routes and proxy `/api/*` and `/health/*` to the separate API. Configure HTTPS, trusted CORS origins, and secure refresh cookies on the backend.
 
 ## Screens and workflows
-- Login only; no public signup or first-run setup route.
+- Login and public self-registration for student/faculty accounts; admin/super-admin roles cannot be chosen in the sign-up form.
 - Student/faculty dashboards and issue tracker.
+- Responsive interface typography and form controls sized for easier reading.
 - IBIS proposed solutions, pro/con arguments, voting and accepted-solution workflow.
 - Campus Pulse thread feed, replies, reactions, reports and moderation.
 - Private case chat, notifications, profile/security settings.
