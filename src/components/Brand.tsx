@@ -1,0 +1,1 @@
+export default function Brand({compact=false}:{compact?:boolean}){return <div className={`brand-lockup ${compact?'brand-compact':''}`}><span className="brand-mark" aria-hidden="true"><span/><span/><span/></span><span className="brand-copy"><strong>IBIOS</strong><small>Metro Dagupan Colleges</small></span></div>}
