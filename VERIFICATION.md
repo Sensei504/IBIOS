@@ -10,4 +10,4 @@ npm run typecheck
 npm run build
 ```
 
-Then verify login/logout and refresh, issue reporting and status changes, IBIS proposal/vote/argument operations, thread creation/replies/reactions/flags, case chat visibility, role boundaries, CSV imports and exports, printing, keyboard focus, small-screen layouts, CSP/CORS and production API proxy. Commit `package-lock.json` and use `npm ci` for reproducible builds.
+Then verify student/faculty sign-up (including rejection of privileged roles), login/logout and refresh, issue reporting and status changes, IBIS proposal/vote/argument operations, thread creation/replies/reactions/flags, case chat visibility, role boundaries, CSV imports and exports, printing, keyboard focus, small-screen layouts, CSP/CORS and production API proxy. Commit `package-lock.json` and use `npm ci` for reproducible builds.
