@@ -1,0 +1,33 @@
+# Netlify configuration for the Vite + React frontend.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# Proxy API calls through Netlify so the browser uses the same origin and
+# refresh-cookie requests do not depend on third-party cookie support.
+[[redirects]]
+  from = "/api/*"
+  to = "https://ibios-backend-api.vercel.app/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/health"
+  to = "https://ibios-backend-api.vercel.app/health"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/health/*"
+  to = "https://ibios-backend-api.vercel.app/health/:splat"
+  status = 200
+  force = true
+
+# Client-side React Router routes should all load the built SPA entrypoint.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
